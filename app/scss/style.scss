@@ -19,20 +19,21 @@
         padding-left: 35px;
     }
     &__list-link{
+        @extend %roboto-400;
         color: $title;
         text-transform: uppercase;
-        padding-bottom: 2px;
+        padding-bottom: 0 2px 1px;
         @extend %quicksand-400;
         transition: all 0.3s ease 0s;
         &:hover{
             color: $accent;
-            @extend %quicksand-500;
+            @extend %roboto-700;
             border-bottom: 1px solid $accent;
         }
     }
     &__list-link--active{
         color: $accent;
-        @extend %quicksand-500;
+        @extend %roboto-700;
         border-bottom: 1px solid $accent;
     }
 }
