@@ -56,7 +56,16 @@ $(function() {
       arrows: false,
       fade: true,
       autoplay: true,
-      autoplaySpeed: 3000
+      autoplaySpeed: 2000
+  });
+
+  $('.footer-top__title').on('click', function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer-top__title--active')
+  });
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active')
   });
 
 $('.blog-page__slider').slick({
